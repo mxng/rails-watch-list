@@ -2,14 +2,7 @@
 <p>All my lists here</p>
 
 <div class="row">
-  <% @lists.each do |list| %>
-    <div class="col-6">
-      <div class="card p-3 my-3 h-auto">
-        <h3><%= list.name %></h3>
-        <%= link_to "See more", list_path(list), class: "btn btn-info" %>
-      </div>
-    </div>
-  <% end %>
+  <%= render @lists %>
 </div>
 
 <%= link_to 'Create new list', new_list_path, class: "btn btn-primary btn-flat" %>
