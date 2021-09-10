@@ -1,7 +1,7 @@
 <h1>New bookmark</h1>
 <p>Add your awesome bookmark</p>
 
-<%= simple_form_for @bookmark do |f| %>
+<%= simple_form_for [ @list, @bookmark ] do |f| %>
   <%= f.input :comment %>
   <%= f.association :movie %>
   <%= f.association :list %>
