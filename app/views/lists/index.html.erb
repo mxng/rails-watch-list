@@ -1,8 +1,18 @@
-<h1>My lists</h1>
-<p>All my lists here</p>
-
-<div class="row">
-  <%= render @lists %>
+<div class="banner">
+  <div class="container">
+    <h1>Your <strong>favourite</strong> movies, personalised</h1>
+    <p>Never forget which movie you watched</p>
+  </div>
 </div>
 
-<%= link_to 'Create new list', new_list_path, class: "btn btn-primary btn-flat" %>
+<div class="container">
+
+  <h2>My lists</h2>
+  <p>All my lists here</p>
+
+  <div class="row">
+    <%= render @lists %>
+  </div>
+
+  <%= link_to 'Create new list', new_list_path, class: "btn btn-primary btn-flat" %>
+</div>
