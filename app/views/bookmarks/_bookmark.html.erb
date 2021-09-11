@@ -1,5 +1,9 @@
-<div class="col-6">
-  <div class="card p-3">
-    <p><%= bookmark.comment %></p>
+<div class="col-6 col-lg-3">
+  <div class="card">
+    <%= image_tag bookmark.movie.poster_url, class: "card-img-top" %>
+    <div class="card-body">
+      <h4 class="card-title"><%= bookmark.movie.title %></h4>
+      <p class="card-text"><%= bookmark.comment %></p>
+    </div>
   </div>
 </div>
